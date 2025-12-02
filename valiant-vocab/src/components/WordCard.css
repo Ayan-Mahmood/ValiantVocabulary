@@ -1,0 +1,125 @@
+.word-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 650px;
+}
+
+.card-title {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #718096;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.word-section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.word {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0;
+}
+
+.part-of-speech {
+  font-size: 1rem;
+  color: #4a5568;
+  font-style: italic;
+}
+
+.definition {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.input-section {
+  margin-top: 2.5rem;
+}
+
+.input-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.sentence-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.sentence-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.sentence-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pre-check-message {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  min-height: 1.5rem;
+  text-align: center;
+}
+
+.pre-check-message.warning {
+  color: #f97316;
+}
+
+.pre-check-message.info {
+  color: #3b82f6;
+}
+
+.feedback-section {
+  margin-top: 1.5rem;
+  min-height: 60px;
+}
+
+.loading {
+  text-align: center;
+  color: #718096;
+  font-style: italic;
+  padding: 1rem;
+}
+
+@media (max-width: 640px) {
+  .word-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .word {
+    font-size: 2.25rem;
+  }
+
+  .definition {
+    font-size: 1rem;
+  }
+}
+
